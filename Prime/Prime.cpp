@@ -3,7 +3,7 @@
 bool PrimeNumber(int num)
 {
 	int i;
-	for (i = 2; i <= (num - 1); ++i)
+	for (i = 2; i < num; ++i)
 	{
 		std::cout << num << " % " << i << " = " << num%i <<std::endl;
 
