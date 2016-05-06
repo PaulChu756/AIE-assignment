@@ -25,16 +25,16 @@ int HighestPrime(int startNum, int endNum)
 	int highestPrime = 0;
 	for (startNum = 0; startNum < endNum; startNum++)
 	{
-		isPrime(startNum);
-
 		std::cout << " " << std::endl;
-		std::cout << startNum << std::endl;	
+		std::cout << startNum << std::endl;
 		std::cout << " " << std::endl;
 
-		if (startNum > highestPrime)
+		if (isPrime(startNum))
 		{
-			highestPrime = startNum;
-			
+			if (startNum > highestPrime)
+			{
+				highestPrime = startNum;
+			}
 		}
 	}
 	std::cout << "The highest prime number is: " << highestPrime << std::endl;
