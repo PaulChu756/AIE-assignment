@@ -11,6 +11,7 @@ bool isPrime(int num)
 		{
 			std::cout << "remainder of " << i << ", "<< num << " is not 0" << std::endl;
 			std::cout << "False : Not a Prime Number" << std::endl;
+			std::cout << " " << std::endl;
 			// Return false if it's not a prime number
 			return false;
 		}
@@ -52,16 +53,33 @@ int SumOfPrimes(int startNum, int endNum)
 
 		if (isPrime(startNum)) // checks if the number is prime
 		{
-			sumOfPrimes += startNum;
+			sumOfPrimes += startNum; // add all the prime numbers together!
 		}
 	}
 	std::cout << "Sum of prime numbers is! " << sumOfPrimes << std::endl;
 	return sumOfPrimes;
 }
 
-int HighestPrimeFactor()
+int HighestPrimeFactor(int startNum, int endNum)
 {
-	return true;
+	int highestPrimeFactor = 0;
+
+	for (startNum = 0; startNum < endNum; startNum++) // Loop through range to check if they're prime numbers
+	{
+		if (isPrime(startNum)) // checks if numbers in the loop are prime or not.
+		{
+			// I know two prime numbers will have to equal the endNum.
+			if (startNum > highestPrimeFactor)
+			{
+				highestPrimeFactor = startNum;
+				highestPrimeFactor * startNum == endNum;
+				std::cout << highestPrimeFactor << " * " << startNum << " == " << endNum << std::endl;
+				std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
+				std::cout << " " << std::endl;
+			}
+		}
+	}
+	return highestPrimeFactor;
 }
 
 int main()
@@ -69,7 +87,6 @@ int main()
 	while (true)
 	{
 		int p, startNumber, endNumber;
-		std::cout << " " << std::endl;
 
 		//// Just for Prime Number
 		/*std::cout << "Enter a number: " << std::endl;
@@ -82,9 +99,14 @@ int main()
 		HighestPrime(startNumber, endNumber);*/
 
 		//// Sum of Prime Numbers
-		std::cout << "Enter two numbers to find out the sum of all the prime numbers!" << std::endl;
+		/*std::cout << "Enter two numbers to find out the sum of all the prime numbers!" << std::endl;
 		std::cin >> startNumber >> endNumber;
-		SumOfPrimes(startNumber, endNumber);
+		SumOfPrimes(startNumber, endNumber);*/
+
+		//// Highest Prime Factor
+		std::cout << "Enter two numbers to find out the highest prime factor" << std::endl;
+		std::cin >> startNumber >> endNumber;
+		HighestPrimeFactor(startNumber, endNumber);
 	}
 	system("pause");
 }
