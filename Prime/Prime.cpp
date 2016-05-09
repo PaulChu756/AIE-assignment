@@ -62,30 +62,21 @@ int SumOfPrimes(int startNum, int endNum)
 
 int HighestPrimeFactor(int startNum, int endNum)
 {
-	int prime = 0;
-	int factor = 0;
 	int highestPrimeFactor = 0;
 
-	for (startNum = 0; startNum < endNum; startNum++)
+	for (startNum = endNum - 1; startNum > 1; startNum--)
 	{
-		if (isPrime(startNum)) // if prime
+		if (isPrime(startNum))
 		{
-			if (startNum > prime)
-			{
-				prime = startNum;
+			highestPrimeFactor = startNum;
 
-				if (endNum % prime == 0) // if the prime number is a factor of EndNum
-				{
-					factor = prime;
-				}
+			if (endNum % highestPrimeFactor == 0)
+			{
+				std::cout << endNum << " % " << startNum << " = " << endNum%startNum << std::endl;
+				std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
+				std::cout << " " << std::endl;
 			}
 		}
-
-		prime * factor == endNum;
-
-		std::cout << prime << " * " << factor << " == " << prime * factor << std::endl;
-		std::cout << "Highest prime factor of: " << endNum << " is " << prime << std::endl;
-		std::cout << " " << std::endl;
 	}
 	return highestPrimeFactor;
 }
