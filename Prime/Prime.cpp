@@ -60,24 +60,33 @@ int SumOfPrimes(int startNum, int endNum)
 	return sumOfPrimes;
 }
 
+int Factor(int num)
+{
+	int factorOfNum = 0;
+
+	for (int i = num - 1; i > 0; i--)
+	{
+		if (num % i == 0)
+		{
+			factorOfNum = i;
+			std::cout << num << " % " << factorOfNum << " == 0 " << std::endl;
+		}
+	}
+	return factorOfNum;
+}
+
 int HighestPrimeFactor(int startNum, int endNum)
 {
 	int highestPrimeFactor = 0;
 
-	for (startNum = endNum - 1; startNum > 1; startNum--)
-	{
-		if (isPrime(startNum))
-		{
-			highestPrimeFactor = startNum;
+	Factor(endNum); // all the factors between inputs
 
-			if (endNum % highestPrimeFactor == 0)
-			{
-				std::cout << endNum << " % " << startNum << " = " << endNum%startNum << std::endl;
-				std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
-				std::cout << " " << std::endl;
-			}
-		}
-	}
+	//		if (endNum % highestPrimeFactor == 0)
+	//		{
+	//			std::cout << endNum << " % " << startNum << " = " << endNum%startNum << std::endl;
+	//			std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
+	//			std::cout << " " << std::endl;
+	//		}
 	return highestPrimeFactor;
 }
 
@@ -101,6 +110,11 @@ int main()
 		/*std::cout << "Enter two numbers to find out the sum of all the prime numbers!" << std::endl;
 		std::cin >> startNumber >> endNumber;
 		SumOfPrimes(startNumber, endNumber);*/
+
+		//// Factor
+		/*std::cout << "Enter a number, to see if it has factors!" << std::endl;
+		std::cin >> p;
+		Factor(p);*/
 
 		//// Highest Prime Factor
 		std::cout << "Enter two numbers to find out the highest prime factor" << std::endl;
