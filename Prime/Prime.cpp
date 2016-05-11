@@ -78,15 +78,20 @@ int Factor(int num)
 int HighestPrimeFactor(int startNum, int endNum)
 {
 	int highestPrimeFactor = 0;
+	int array[10];
 
-	Factor(endNum); // all the factors between inputs
+	for (int i = 10; i >= 0; --i)
+	{
+		array[i] = Factor(endNum);
+	}
+	 // all the factors between inputs
+	// So I factor the number, but now I need to store the numbers so I can compare them to see which one is the
+	// highest prime factor
 
-	//		if (endNum % highestPrimeFactor == 0)
-	//		{
-	//			std::cout << endNum << " % " << startNum << " = " << endNum%startNum << std::endl;
-	//			std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
-	//			std::cout << " " << std::endl;
-	//		}
+	std::cout << endNum << " % " << startNum << " = " << endNum%startNum << std::endl;
+	std::cout << "Highest prime factor of: " << endNum << " is " << highestPrimeFactor << std::endl;
+	std::cout << " " << std::endl;
+
 	return highestPrimeFactor;
 }
 
