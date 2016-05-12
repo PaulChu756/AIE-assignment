@@ -62,9 +62,10 @@ int SumOfPrimes(int startNum, int endNum)
 
 int Factor(int num)
 {
+	//Input number, and output all the factors that go into the input.
 	int factorOfNum = 0;
 
-	for (int i = num - 1; i > 0; i--)
+	for (int i = 1; i < num; ++i)
 	{
 		if (num % i == 0)
 		{
@@ -84,7 +85,7 @@ int HighestPrimeFactor(int startNum, int endNum)
 	{
 		array[i] = Factor(endNum);
 	}
-	 // all the factors between inputs
+	// all the factors between inputs
 	// So I factor the number, but now I need to store the numbers so I can compare them to see which one is the
 	// highest prime factor
 
@@ -117,14 +118,14 @@ int main()
 		SumOfPrimes(startNumber, endNumber);*/
 
 		//// Factor
-		/*std::cout << "Enter a number, to see if it has factors!" << std::endl;
+		std::cout << "Enter a number, to see if it has factors!" << std::endl;
 		std::cin >> p;
-		Factor(p);*/
+		Factor(p);
 
 		//// Highest Prime Factor
-		std::cout << "Enter two numbers to find out the highest prime factor" << std::endl;
+		/*std::cout << "Enter two numbers to find out the highest prime factor" << std::endl;
 		std::cin >> startNumber >> endNumber;
-		HighestPrimeFactor(startNumber, endNumber);
+		HighestPrimeFactor(startNumber, endNumber);*/
 	}
 	system("pause");
 }
