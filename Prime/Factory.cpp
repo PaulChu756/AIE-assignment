@@ -11,10 +11,3 @@ int factor(int i)
 	else
 		return i * factor(i - 1);
 }
-
-//int main()
-//{
-//	factor(2);
-//	cout << factor << endl;
-//	system("pause");
-//}

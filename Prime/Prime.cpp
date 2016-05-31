@@ -79,33 +79,3 @@ int HighestPrimeFactor(long num)
 	}
 	return highestPrimeFactor;
 }
-
-int main()
-{
-	while (true)
-	{
-		int num;
-		
-		//// Just for Prime Number
-		/*std::cout << "Enter a number: " << std::endl;
-		std::cin >> num;
-		isPrime(p);*/
-
-		//// Highest Prime Number
-		/*std::cout << "Enter two numbers to find out what's the highest prime!" << std::endl;
-		std::cin >> num;
-		HighestPrime(num);*/
-
-		//// Sum of Prime Numbers
-		/*std::cout << "Enter two numbers to find out the sum of all the prime numbers!" << std::endl;
-		std::cin >> num;
-		SumOfPrimes(num);*/
-
-		//// Highest Prime Factor
-		std::cout << "Enter a number to find out the highest prime factor." << std::endl;
-		std::cin >> num;
-		HighestPrimeFactor(num);
-	}
-	system("pause");
-}
-

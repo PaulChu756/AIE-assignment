@@ -49,20 +49,3 @@ void print()
 	std::cout << "->" << four.data;
 	std::cout << "->" << five.data << std::endl;
 }
-
-//int main()
-//{
-//	zero.data = 0;
-//	one.data = 1;
-//	two.data = 2;
-//	three.data = 3;
-//	four.data = 4;
-//	five.data = 5;
-//
-//	print();
-//	swapNode(&one, &three);
-//	print();
-//
-//	system("Pause");
-//	return 0;
-//}
