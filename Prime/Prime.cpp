@@ -24,7 +24,7 @@ bool isPrime(int num)
 int HighestPrime(int num)
 {
 	int highestPrime = 0; // int to have the highest prime
-	for (int i = 0; i < num; i++) // Debugging for checking startNum to endNum is prime
+	for (int i = 1; i < num; i++) // Debugging for checking startNum to endNum is prime
 	{
 		std::cout << " " << std::endl;
 		std::cout << i << std::endl;
@@ -60,7 +60,7 @@ int SumOfPrimes(int num)
 	return sumOfPrimes;
 }
 
-int HighestPrimeFactor(int num)
+int HighestPrimeFactor(long num)
 {
 	int highestPrimeFactor = 0;
 	int factor = 0;
@@ -71,10 +71,10 @@ int HighestPrimeFactor(int num)
 		if (num % i == 0)
 		{
 			factor = i;
-			std::cout << factor << std::endl;
-			//highestPrimeFactor = HighestPrime(factor);
-			//std::cout << highestPrimeFactor << std::endl;
-			//std::cout << "Highest prime factor of: " << num << " is " << highestPrimeFactor << std::endl;
+			HighestPrime(factor);
+			highestPrimeFactor = factor;
+			std::cout << highestPrimeFactor << std::endl;
+			std::cout << "Highest prime factor of: " << num << " is " << highestPrimeFactor << std::endl;
 		}
 	}
 	return highestPrimeFactor;
