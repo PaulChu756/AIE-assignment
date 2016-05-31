@@ -121,6 +121,10 @@
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Prime.cpp" />
+    <ClCompile Include="UpperCase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UpperCase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
