@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "By2.h"
 
 void UpperCase(std::string s)
 {
@@ -25,8 +26,8 @@ void UpperCase(std::string s)
 
 int main()
 {
-	while (true)
-	{
+	/*while (true)
+	{*/
 		//// (Factorying)
 		//	factor(2);
 		//	cout << factor << endl;
@@ -61,11 +62,19 @@ int main()
 		std::cin >> num;
 		HighestPrimeFactor(num);*/
 
-		//// (UpperCase)
 		
-		UpperCase("The quick BROWN FOx");
-		UpperCase("the quick brown fox");
-		UpperCase("THE QUICK BROWN FOX");
-	}
+
+		
+	//}
+
+	//// (UpperCase)
+	/*UpperCase("The quick BROWN FOx");
+	UpperCase("the quick brown fox");
+	UpperCase("THE QUICK BROWN FOX");*/
+
+	////(MultiplyBy2
+	By2 by;
+	by.MultiplyBy2(2);
+
 	system("pause");
 }
