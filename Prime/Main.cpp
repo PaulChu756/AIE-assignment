@@ -61,10 +61,6 @@ int main()
 		/*std::cout << "Enter a number to find out the highest prime factor." << std::endl;
 		std::cin >> num;
 		HighestPrimeFactor(num);*/
-
-		
-
-		
 	//}
 
 	//// (UpperCase)
@@ -74,7 +70,8 @@ int main()
 
 	////(MultiplyBy2
 	By2 by;
-	by.MultiplyBy2(2);
+	//by.MultiplyBy2(2);
+	by.MultiplyBy3(2);
 
 	system("pause");
 }
