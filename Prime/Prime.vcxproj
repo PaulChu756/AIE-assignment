@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="0IntheBack.cpp" />
     <ClCompile Include="By2.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -125,6 +126,7 @@
     <ClCompile Include="Prime.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="0IntheBack.h" />
     <ClInclude Include="By2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

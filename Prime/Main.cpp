@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "By2.h"
+#include "0IntheBack.h"
 
 void UpperCase(std::string s)
 {
@@ -69,9 +70,13 @@ int main()
 	UpperCase("THE QUICK BROWN FOX");*/
 
 	////(MultiplyBy2
-	By2 by;
+	//By2 by;
 	//by.MultiplyBy2(2);
-	by.MultiplyBy3(2);
+	//by.MultiplyBy3(2);
+
+	int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
+	Zero zero;
+	zero.ZeroValue(x, 10);
 
 	system("pause");
 }

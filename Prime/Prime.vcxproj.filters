@@ -30,9 +30,15 @@
     <ClCompile Include="By2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0IntheBack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="By2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="0IntheBack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
