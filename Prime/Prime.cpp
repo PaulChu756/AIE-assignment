@@ -1,6 +1,5 @@
-#include <iostream>
-
-bool isPrime(int num)
+#include "Prime.h"
+bool PrimeNum::isPrime(int num)
 {
 	int i;
 	for (i = 2; i < num; ++i)
@@ -21,7 +20,7 @@ bool isPrime(int num)
 	return true;
 }
 
-int HighestPrime(int num)
+int PrimeNum::HighestPrime(int num)
 {
 	int highestPrime = 0; // int to have the highest prime
 	for (int i = 1; i < num; i++) // Debugging for checking startNum to endNum is prime
@@ -42,7 +41,7 @@ int HighestPrime(int num)
 	return highestPrime;
 }
 
-int SumOfPrimes(int num)
+int PrimeNum::SumOfPrimes(int num)
 {
 	int sumOfPrimes = 0;
 	for (int i = 0; i <= num; i++) // Loop through to add all the prime numbers together
@@ -60,7 +59,7 @@ int SumOfPrimes(int num)
 	return sumOfPrimes;
 }
 
-int HighestPrimeFactor(long num)
+int PrimeNum::HighestPrimeFactor(int num)
 {
 	int highestPrimeFactor = 0;
 	int factor = 0;

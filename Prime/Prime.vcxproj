@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClInclude Include="0IntheBack.h" />
     <ClInclude Include="By2.h" />
+    <ClInclude Include="Prime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

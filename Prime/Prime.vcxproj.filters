@@ -41,5 +41,8 @@
     <ClInclude Include="0IntheBack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Prime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
