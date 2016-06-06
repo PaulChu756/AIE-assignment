@@ -1,6 +1,7 @@
 #include <iostream>
 #include<stdio.h>
 #include<stdlib.h>
+#include "Node.h"
 
 /*
 Create a function that swaps any two Nodes in a singly Link List
@@ -13,20 +14,12 @@ The input node will go through the list by going through other nodes to find the
 Then the other node will have to traversal to the other node's placement for "Swapping".
 */
 
-struct Node
+void Node::swapNode(Node *a, Node *b)
 {
-	int data;
-	Node *next;
-};
-
-void swapNode(Node *a, Node *b)
-{
-	// Getting confused with Root/currentNode with next
-	Node *root = b;
-
-	Node *t = b;
-	b = a->next;
-	a = t->next;
+	// -> is for pointing
+	Node *t = b->next;
+	b->next = a->next;
+	a->next = t;
 
 	/*Node *t = b.next;
 	b.next = a.next;
@@ -40,7 +33,7 @@ Node three;
 Node four;
 Node five;
 
-void print()
+void Node::print()
 {
 	std::cout << zero.data;
 	std::cout << "->" << one.data;

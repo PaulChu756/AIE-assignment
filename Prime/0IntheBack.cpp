@@ -15,8 +15,10 @@ void Zero::ZeroValue(int num[], int length)
 					num[j] = 0; // set to 0
 				}
 				else
+				{
 					num[j] = num[j + 1]; // current element to grab the next element to push up other elements in the array
-				print(num, length);
+				}
+				print(num, length); // outputs values step by step
 			}
 		}
 	}

@@ -3,6 +3,7 @@
 #include "By2.h"
 #include "0IntheBack.h"
 #include "Prime.h"
+#include "Node.h"
 
 void UpperCase(std::string s)
 {
@@ -30,6 +31,7 @@ void UpperCase(std::string s)
 	std::cout << s << std::endl;
 }
 
+
 int main()
 {
 	/*while (true)
@@ -39,15 +41,15 @@ int main()
 		//	cout << factor << endl;
 
 		//// (Nodes)
-		//	zero.data = 0;
-		//	one.data = 1;
-		//	two.data = 2;
-		//	three.data = 3;
-		//	four.data = 4;
-		//	five.data = 5;
-		//	print();
-		//	swapNode(&one, &three);
-		//	print();
+		/*zero.data = 0;
+		one.data = 1;
+		two.data = 2;
+		three.data = 3;
+		four.data = 4;
+		five.data = 5;*/
+		/*print();
+		swapNode(&one, &three);
+		print();*/
 
 		//(Prime)
 		//double long num;
@@ -85,9 +87,9 @@ int main()
 	//by.MultiplyBy3(2);
 
 	//// Zero to the back function
-	int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
+	/*int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
 	Zero zero;
-	zero.ZeroValue(x, 10);
+	zero.ZeroValue(x, 10);*/
 
 	system("pause");
 }
