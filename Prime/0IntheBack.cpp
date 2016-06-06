@@ -4,8 +4,6 @@ void Zero::ZeroValue(int num[], int length)
 {
 	for (int i = 0; i < length; ++i)
 	{
-		//std::cout << num[i] << ' ';
-
 		if (num[i] == 0)
 		{
 			num[length - 1] = 0; // put the last element of the array to 0
@@ -18,8 +16,21 @@ void Zero::ZeroValue(int num[], int length)
 				}
 				else
 					num[j] = num[j + 1]; // current element to grab the next element to push up other elements in the array
+				print(num, length);
 			}
 		}
-		std::cout << num[i] << ' ';
+	}
+}
+
+void Zero::print(int num[], int length)
+{
+	for (int i = 0; i < length; ++i)
+	{
+		if (i == length - 1)
+		{
+			std::cout << num[i] << std::endl;
+		}
+		else
+			std::cout << num[i] << ' ';
 	}
 }
