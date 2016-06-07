@@ -16,14 +16,38 @@ Then the other node will have to traversal to the other node's placement for "Sw
 
 void Node::swapNode(Node *a, Node *b)
 {
+	// check if given same answer
+	if (a == b)
+		return;
+
+	// check if a or b is null
+	if (a == NULL || b == NULL)
+		return;
+	
+	// need root node, and current node and travesal through list
+	Node *currentNode;
+	while (currentNode->next != NULL)
+	{
+		currentNode = currentNode->next;
+	}
+
+
+
+	// check when swapping in between numbers
+
+
+	// check swapping next to each other
+	// if swapping next to each other, grabs other's next
+	// while the other one grabs the previous's next
+
+	// check swapping on the ends
+	// when swapping the ends, one needs to grab the other's one next
+	// while the other one will be null
+
 	// -> is for pointing
 	Node *t = b->next;
 	b->next = a->next;
 	a->next = t;
-
-	/*Node *t = b.next;
-	b.next = a.next;
-	a.next = t;*/
 }
 
 Node zero;
@@ -35,6 +59,13 @@ Node five;
 
 void Node::print()
 {
+	zero.data = 0;
+	one.data = 1;
+	two.data = 2;
+	three.data = 3;
+	four.data = 4;
+	five.data = 5;
+
 	std::cout << zero.data;
 	std::cout << "->" << one.data;
 	std::cout << "->" << two.data;
