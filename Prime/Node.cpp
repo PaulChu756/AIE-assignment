@@ -19,6 +19,10 @@ void Node::swapNode(Node *a, Node *b)
 	// check if given same answer
 	if (a == b)
 		return;
+
+	// check if input are actual answers
+	if (a == NULL || b == NULL)
+		return;
 	
 	// need root node, and current node and travesal through list
 	Node *currentNode;
