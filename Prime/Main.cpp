@@ -40,19 +40,6 @@ int main()
 		//	factor(2);
 		//	cout << factor << endl;
 
-		//// (Nodes)
-		Node node;
-		Node zero;
-		Node one;
-		Node two;
-		Node three;
-		Node four;
-		Node five;
-
-		node.print();
-		node.swapNode(&one, &three);
-		node.print();
-
 		//(Prime)
 		//double long num;
 
@@ -92,6 +79,19 @@ int main()
 	/*int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
 	Zero zero;
 	zero.ZeroValue(x, 10);*/
+
+	//// (Nodes)
+	Node node;
+	Node zero;
+	Node one;
+	Node two;
+	Node three;
+	Node four;
+	Node five;
+
+	node.print();
+	node.swapNode(&one, &three);
+	node.print();
 
 	system("pause");
 }

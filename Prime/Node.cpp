@@ -19,10 +19,6 @@ void Node::swapNode(Node *a, Node *b)
 	// check if given same answer
 	if (a == b)
 		return;
-
-	// check if a or b is null
-	if (a == NULL || b == NULL)
-		return;
 	
 	// need root node, and current node and travesal through list
 	Node *currentNode;
@@ -30,11 +26,6 @@ void Node::swapNode(Node *a, Node *b)
 	{
 		currentNode = currentNode->next;
 	}
-
-
-
-	// check when swapping in between numbers
-
 
 	// check swapping next to each other
 	// if swapping next to each other, grabs other's next
@@ -44,6 +35,7 @@ void Node::swapNode(Node *a, Node *b)
 	// when swapping the ends, one needs to grab the other's one next
 	// while the other one will be null
 
+	// check when swapping in between numbers
 	// -> is for pointing
 	Node *t = b->next;
 	b->next = a->next;
