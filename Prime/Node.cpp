@@ -25,7 +25,7 @@ void Node::swapNode(Node *a, Node *b)
 		return;
 	
 	// need root node, and current node and travesal through list
-	Node *currentNode;
+	Node *currentNode = root;
 	while (currentNode->next != NULL)
 	{
 		currentNode = currentNode->next;

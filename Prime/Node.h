@@ -6,6 +6,7 @@ struct Node
 public:
 	int data;
 	Node *next;
+	Node *root;
 
 	void swapNode(Node *a, Node *b);
 	void print();
