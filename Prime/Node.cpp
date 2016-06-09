@@ -26,20 +26,25 @@ void Node::swapNode(Node *root, Node *a, Node *b)
 	
 	// need root node, and current node and travesal through list
 	Node *currentNode = root;
+	Node *aParent = NULL;
+	Node *bParent = NULL;
+	Node *currentLast = NULL;
+
 	while (currentNode != NULL)
 	{
+		currentLast = currentNode;
+
+		if (currentNode == a)
+		{
+			aParent = currentLast;
+		}
+
+		if (currentNode == b)
+		{
+			bParent = currentLast;
+		}
+
 		currentNode = currentNode->next;
-	}
-
-	// swap parents 
-	if (currentNode->next == a)
-	{
-		currentNode->next = b;
-	}
-
-	if (currentNode->next == b)
-	{
-		currentNode->next = a;
 	}
 
 	// check swapping next to each other
@@ -55,4 +60,6 @@ void Node::swapNode(Node *root, Node *a, Node *b)
 	Node *t = b->next;
 	b->next = a->next;
 	a->next = t;
+	aParent = b;
+	bParent = a;
 }
