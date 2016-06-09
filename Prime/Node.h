@@ -9,5 +9,4 @@ public:
 	Node *root;
 
 	void swapNode(Node *root, Node *a, Node *b);
-	void print();
 };

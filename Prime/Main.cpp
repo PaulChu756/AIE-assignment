@@ -31,6 +31,23 @@ void UpperCase(std::string s)
 	std::cout << s << std::endl;
 }
 
+Node zero;
+Node one;
+Node two;
+Node three;
+Node four;
+Node five;
+
+void print()
+{
+	std::cout << zero.data;
+	std::cout << "->" << one.data;
+	std::cout << "->" << two.data;
+	std::cout << "->" << three.data;
+	std::cout << "->" << four.data;
+	std::cout << "->" << five.data << std::endl;
+}
+
 
 int main()
 {
@@ -81,18 +98,16 @@ int main()
 	zero.ZeroValue(x, 10);*/
 
 	//// (Nodes)
-	Node root;
-	Node node;
-	Node zero;
-	Node one;
-	Node two;
-	Node three;
-	Node four;
-	Node five;
+	zero = { 0, &one, &zero };
+	one = { 1, &two, &zero };
+	two = { 2, &three, &zero };
+	three = { 3, &four, &zero };
+	four = { 4, &five, &zero };
+	five = { 5, nullptr, &zero };
 
-	//node.print();
-	node.swapNode(&root, &one, &three);
-	//node.print();
+	print();
+	zero.swapNode(&zero, &one, &three);
+	print();
 
 	system("pause");
 }
