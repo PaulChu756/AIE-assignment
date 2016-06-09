@@ -14,7 +14,7 @@ The input node will go through the list by going through other nodes to find the
 Then the other node will have to traversal to the other node's placement for "Swapping".
 */
 
-void Node::swapNode(Node *a, Node *b)
+void Node::swapNode(Node * &root, Node * &a, Node * &b)
 {
 	// check if given same answer
 	if (a == b)
@@ -28,6 +28,7 @@ void Node::swapNode(Node *a, Node *b)
 	Node *currentNode = root;
 	while (currentNode->next != NULL)
 	{
+		std::cout << currentNode->data << std::endl;
 		currentNode = currentNode->next;
 	}
 
@@ -46,26 +47,26 @@ void Node::swapNode(Node *a, Node *b)
 	a->next = t;
 }
 
-Node zero;
-Node one;
-Node two;
-Node three;
-Node four;
-Node five;
+//Node zero;
+//Node one;
+//Node two;
+//Node three;
+//Node four;
+//Node five;
 
-void Node::print()
-{
-	zero.data = 0;
-	one.data = 1;
-	two.data = 2;
-	three.data = 3;
-	four.data = 4;
-	five.data = 5;
-
-	std::cout << zero.data;
-	std::cout << "->" << one.data;
-	std::cout << "->" << two.data;
-	std::cout << "->" << three.data;
-	std::cout << "->" << four.data;
-	std::cout << "->" << five.data << std::endl;
-}
+//void Node::print()
+//{
+//	zero.data = 0;
+//	one.data = 1;
+//	two.data = 2;
+//	three.data = 3;
+//	four.data = 4;
+//	five.data = 5;
+//
+//	std::cout << zero.data;
+//	std::cout << "->" << one.data;
+//	std::cout << "->" << two.data;
+//	std::cout << "->" << three.data;
+//	std::cout << "->" << four.data;
+//	std::cout << "->" << five.data << std::endl;
+//}

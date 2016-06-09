@@ -8,6 +8,6 @@ public:
 	Node *next;
 	Node *root;
 
-	void swapNode(Node *a, Node *b);
-	void print();
+	void swapNode(Node * &root, Node * &a, Node * &b);
+	//void print();
 };

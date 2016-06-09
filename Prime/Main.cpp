@@ -89,9 +89,9 @@ int main()
 	Node four;
 	Node five;
 
-	node.print();
+	//node.print();
 	node.swapNode(&one, &three);
-	node.print();
+	//node.print();
 
 	system("pause");
 }
