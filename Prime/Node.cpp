@@ -14,7 +14,7 @@ The input node will go through the list by going through other nodes to find the
 Then the other node will have to traversal to the other node's placement for "Swapping".
 */
 
-void Node::swapNode(Node * &root, Node * &a, Node * &b)
+void Node::swapNode(Node *root, Node *a, Node *b)
 {
 	// check if given same answer
 	if (a == b)

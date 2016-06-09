@@ -81,6 +81,7 @@ int main()
 	zero.ZeroValue(x, 10);*/
 
 	//// (Nodes)
+	Node root;
 	Node node;
 	Node zero;
 	Node one;
@@ -90,7 +91,7 @@ int main()
 	Node five;
 
 	//node.print();
-	node.swapNode(&one, &three);
+	node.swapNode(&root, &one, &three);
 	//node.print();
 
 	system("pause");
