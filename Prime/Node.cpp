@@ -42,23 +42,47 @@ void Node::swapNode(Node *root, Node *a, Node *b)
 			bParent = currentLast;
 		}
 
+		// check swapping next to each other
+		// if swapping next to each other, grabs other's next
+		// while the other one grabs the previous's next
+		if (a->next == b)
+		{
+			a->next = b->next;
+			b->next = a;
+			aParent = b;
+		}
+
+		if (b->next == a)
+		{
+			b->next = a->next;
+			a->next = b;
+			bParent = a;
+		}
+
+		// check swapping on the ends
+		// when swapping the ends, one needs to grab the other's one next
+		// while the other one will be null
+		if (currentNode->next == b)
+		{
+			b->next = a->next;
+			a->next = NULL;
+		}
+
+		if (currentNode->next == a)
+		{
+			a->next = b->next;
+			b->next = NULL;
+		}
+
 		currentLast = currentNode;
 		currentNode = currentNode->next;
 	}
-
-	// check swapping next to each other
-	// if swapping next to each other, grabs other's next
-	// while the other one grabs the previous's next
-
-	// check swapping on the ends
-	// when swapping the ends, one needs to grab the other's one next
-	// while the other one will be null
 
 	// check when swapping in between numbers
 	// -> is for pointing
 	Node *t = b->next;
 	b->next = a->next;
 	a->next = t;
-	aParent = b;
-	bParent = a;
+	aParent->next = b;
+	bParent->next = a;
 }

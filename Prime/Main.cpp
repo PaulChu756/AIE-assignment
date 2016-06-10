@@ -40,17 +40,29 @@ Node five;
 
 void print()
 {
-	std::cout << zero.data;
-	std::cout << "->" << one.data;
-	std::cout << "->" << two.data;
-	std::cout << "->" << three.data;
-	std::cout << "->" << four.data;
-	std::cout << "->" << five.data << std::endl;
+	std::cout << zero.data; // 0
+	std::cout << "->"<<  zero.next->data; // 1, when swapped, be 3
+	std::cout << "->" << one.next->data; // 2 // somehow it's 4
+	std::cout << "->" << two.next->data; // 3 
+	std::cout << "->" << three.next->data; // 4
+	std::cout << "->" << four.next->data << std::endl; // 5
 }
 
 
 int main()
 {
+	//// (Nodes)
+	zero = { 0, &one, &zero };
+	one = { 1, &two, &zero };
+	two = { 2, &three, &zero };
+	three = { 3, &four, &zero };
+	four = { 4, &five, &zero };
+	five = { 5, nullptr, &zero };
+
+	print();
+	zero.swapNode(&zero, &one, &three);
+	print();
+
 	/*while (true)
 	{*/
 		//// (Factorying)
@@ -96,18 +108,6 @@ int main()
 	/*int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
 	Zero zero;
 	zero.ZeroValue(x, 10);*/
-
-	//// (Nodes)
-	zero = { 0, &one, &zero };
-	one = { 1, &two, &zero };
-	two = { 2, &three, &zero };
-	three = { 3, &four, &zero };
-	four = { 4, &five, &zero };
-	five = { 5, nullptr, &zero };
-
-	print();
-	zero.swapNode(&zero, &one, &three);
-	print();
 
 	system("pause");
 }
