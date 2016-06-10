@@ -32,8 +32,6 @@ void Node::swapNode(Node *root, Node *a, Node *b)
 
 	while (currentNode != NULL)
 	{
-		currentLast = currentNode;
-
 		if (currentNode == a)
 		{
 			aParent = currentLast;
@@ -44,6 +42,7 @@ void Node::swapNode(Node *root, Node *a, Node *b)
 			bParent = currentLast;
 		}
 
+		currentLast = currentNode;
 		currentNode = currentNode->next;
 	}
 
