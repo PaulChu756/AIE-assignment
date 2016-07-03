@@ -4,6 +4,7 @@
 #include "0IntheBack.h"
 #include "Prime.h"
 #include "Node.h"
+#include "ProjectEuler.h"
 
 void UpperCase(std::string s)
 {
@@ -52,7 +53,7 @@ void print()
 int main()
 {
 	//// (Nodes)
-	zero = { 0, &one, &zero };
+	/*zero = { 0, &one, &zero };
 	one = { 1, &two, &zero };
 	two = { 2, &three, &zero };
 	three = { 3, &four, &zero };
@@ -61,7 +62,7 @@ int main()
 
 	print();
 	zero.swapNode(&zero, &one, &three);
-	print();
+	print();*/
 
 	/*while (true)
 	{*/
@@ -92,7 +93,10 @@ int main()
 	//	std::cin >> num;
 	//	PrimeNum primeNum;
 	//	primeNum.HighestPrimeFactor(num);
+
+	
 	//}
+	
 
 	//// (UpperCase)
 	/*UpperCase("The quick BROWN FOx");
@@ -108,6 +112,11 @@ int main()
 	/*int x[] = { 2, 0, 2, 3, 4, 64, 98, 0, 2, 0 };
 	Zero zero;
 	zero.ZeroValue(x, 10);*/
+
+	ProjectEuler euler;
+	//euler.sumOfThreeAndFive(1000);
+	euler.evenFibNum(4000000);
+	
 
 	system("pause");
 }

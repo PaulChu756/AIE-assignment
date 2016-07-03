@@ -124,12 +124,14 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Prime.cpp" />
+    <ClCompile Include="ProjectEuler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0IntheBack.h" />
     <ClInclude Include="By2.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Prime.h" />
+    <ClInclude Include="ProjectEuler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
