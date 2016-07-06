@@ -40,7 +40,7 @@ int ProjectEuler::evenFibNum(int num)
 	return true;
 }
 
-int ProjectEuler::smallestMultiple()
+int ProjectEuler::smallestMultiple(int num)
 {
 	/*
 	2520 is the smallest number that can be divided 
@@ -51,13 +51,25 @@ int ProjectEuler::smallestMultiple()
 	*/
 
 	int smallestMult = 1;
-	for (int i = 1; i <= 10; i++)
+	bool condition = true;
+	while (condition)
 	{
-		if (smallestMult % i == 0)
+		for (int i = 1; i <= num; i++)
 		{
-			std::cout << smallestMult << " % " << i << " = " << smallestMult%i << std::endl;
+			if (smallestMult % i != 0)
+			{
+				break;
+				return smallestMult;
+			}
+			else
+			{
+				if (num == i)
+				{
+
+				}
+			}
 			smallestMult++;
 		}
 	}
-	return true;
+	return smallestMult;
 }

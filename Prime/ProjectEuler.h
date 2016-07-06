@@ -6,5 +6,5 @@ class ProjectEuler
 	public:
 		int sumOfThreeAndFive(int num);
 		int evenFibNum(int num);
-		int smallestMultiple();
+		int smallestMultiple(int num);
 };
