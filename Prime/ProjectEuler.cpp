@@ -14,30 +14,30 @@ int ProjectEuler::sumOfThreeAndFive(int num)
 	return true;
 }
 
-int ProjectEuler::evenFibNum(int num)
+bool ProjectEuler::isEven(int num)
 {
-	// By considering the terms in the 
-	// Fibonacci sequence whose values do not 
-	// exceed four million, find the sum of the even-valued terms.
+	if (num % 2 == 0)
+	{
+		std::cout << "True" << std::endl;
+		return true;
+	}
+	else
+		std::cout << "False" << std::endl;
+	return false;
+}
 
+std::vector<int> ProjectEuler::fibUntil(int maxNum)
+{
 	int first = 1, second = 1;
-
-	//for (int i = 0; i < num; i++)
-	while (first < num)
+	while (first < maxNum)
 	{
 		int t = first + second;
 		first = second;
 		second = t;
 
-		std::cout << first << std::endl;
-
-		/*if (first % 2 == 0)
-		{
-			first += first;
-			std::cout << first << std::endl;
-		}*/
+		fibUntil.push_back(first);
+		return fibUntil;
 	}
-	return true;
 }
 
 int ProjectEuler::smallestMultiple(int num)

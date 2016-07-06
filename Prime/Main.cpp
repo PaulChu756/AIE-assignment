@@ -115,9 +115,9 @@ int main()
 
 	ProjectEuler euler;
 	//euler.sumOfThreeAndFive(1000);
-	//euler.evenFibNum(10);
-	//euler.evenFibNum(4000000);
-	euler.smallestMultiple(10);
+	//euler.isEven(10);
+	euler.fibUntil(10);
+	//euler.smallestMultiple(10);
 	
 
 	system("pause");
