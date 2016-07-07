@@ -89,12 +89,9 @@ int main()
 		SumOfPrimes(num);*/
 
 		//// Highest Prime Factor
-		/*std::cout << "Enter a number to find out the highest prime factor." << std::endl;
-		std::cin >> num;
+		//std::cout << "Enter a number to find out the highest prime factor." << std::endl;
 		PrimeNum primeNum;
-		primeNum.HighestPrimeFactor(num);*/
-
-	
+		primeNum.HighestPrimeFactor(600851475143);
 	//}
 	
 
@@ -122,6 +119,5 @@ int main()
 	//euler.sumEvens(x);
 	//euler.smallestMultiple(10);
 	
-
 	system("pause");
 }

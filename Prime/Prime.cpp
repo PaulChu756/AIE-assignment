@@ -4,30 +4,30 @@ bool PrimeNum::isPrime(int num)
 	int i;
 	for (i = 2; i < num; ++i)
 	{
-		std::cout << num << " % " << i << " = " << num%i <<std::endl;
+		//std::cout << num << " % " << i << " = " << num%i <<std::endl;
 		// Check if num is compare to 0 to see if it's prime or not.
 		if (i == 0 || i == 1 || num % i == 0)
 		{
-			std::cout << "remainder of " << i << ", "<< num << " is not 0" << std::endl;
+			/*std::cout << "remainder of " << i << ", "<< num << " is not 0" << std::endl;
 			std::cout << "False : Not a Prime Number" << std::endl;
-			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;*/
 			// Return false if it's not a prime number
 			return false;
 		}
 	}
 	// Return true if it's a prime number.
-	std::cout << "True: Is a Prime Number" << std::endl;
+	//std::cout << "True: Is a Prime Number" << std::endl;
 	return true;
 }
 
-int PrimeNum::HighestPrime(int num)
+int PrimeNum::HighestPrime(long long num)
 {
-	int highestPrime = 0; // int to have the highest prime
-	for (int i = 1; i < num; i++) // Debugging for checking startNum to endNum is prime
+	long long highestPrime = 0;
+	for (long long i = 1; i < num; i++)
 	{
-		std::cout << " " << std::endl;
+		/*std::cout << " " << std::endl;
 		std::cout << i << std::endl;
-		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;*/
 
 		if (isPrime(i)) // if the number is prime
 		{
@@ -59,20 +59,20 @@ int PrimeNum::SumOfPrimes(int num)
 	return sumOfPrimes;
 }
 
-int PrimeNum::HighestPrimeFactor(int num)
+int PrimeNum::HighestPrimeFactor(long long num)
 {
-	int highestPrimeFactor = 0;
-	int factor = 0;
+	long long highestPrimeFactor = 0;
+	long long factor = 0;
 
 	//Check factor of number
-	for (int i = 1; i < num; ++i)
+	for (long long i = num; i > 1; --i)
 	{
 		if (num % i == 0)
 		{
 			factor = i;
 			HighestPrime(factor);
 			highestPrimeFactor = factor;
-			std::cout << highestPrimeFactor << std::endl;
+			//std::cout << highestPrimeFactor << std::endl;
 			std::cout << "Highest prime factor of: " << num << " is " << highestPrimeFactor << std::endl;
 		}
 	}
