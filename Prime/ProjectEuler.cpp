@@ -28,15 +28,18 @@ bool ProjectEuler::isEven(int num)
 
 std::vector<int> ProjectEuler::fibUntil(int maxNum)
 {
+	std::vector<int> list = std::vector<int>();
 	int first = 1, second = 1;
+
 	while (first < maxNum)
 	{
 		int t = first + second;
 		first = second;
 		second = t;
-
-		fibUntil.push_back(first);
-		return fibUntil;
+		
+		list.push_back(first);
+		std::cout << list.size() << std::endl;
+		return list;
 	}
 }
 
