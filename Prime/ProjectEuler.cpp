@@ -14,6 +14,24 @@ int ProjectEuler::sumOfThreeAndFive(int num)
 	return true;
 }
 
+int ProjectEuler::evenFibNum(int num)
+{
+	int first = 0, second = 1, temp = 0, sum = 0;
+	while (temp < num)
+	{
+		temp = first + second;
+		first = second;
+		second = temp;
+
+		if (temp % 2 == 0)
+		{
+			sum += temp;
+			std::cout << sum << std::endl;
+		}
+	}
+	return true;
+}
+
 bool ProjectEuler::isEven(int num)
 {
 	if (num % 2 == 0)
@@ -30,7 +48,6 @@ std::vector<int> ProjectEuler::fibUntil(int maxNum)
 {
 	std::vector<int> list = std::vector<int>();
 	int first = 1, second = 1;
-
 	while (first < maxNum)
 	{
 		//std::cout << first << std::endl;
@@ -50,8 +67,9 @@ int ProjectEuler::sumEvens(std::vector<int> list)
 	{
 		if (isEven(list[i]))
 		{
-			evenTotal += i;
-			std::cout << evenTotal << std::endl;
+			std::cout << "Even Number: " << list[i] << std::endl;
+			evenTotal += list[i];
+			std::cout << "Total: " << evenTotal << std::endl;
 		}
 	}
 	return true;

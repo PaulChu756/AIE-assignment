@@ -115,10 +115,11 @@ int main()
 
 	ProjectEuler euler;
 	//euler.sumOfThreeAndFive(1000);
+	//euler.evenFibNum(4000000);
 	//euler.isEven(10);
 	//euler.fibUntil(10);
-	std::vector<int> x = euler.fibUntil(4);
-	euler.sumEvens(x);
+	//std::vector<int> x = euler.fibUntil(4000000);
+	//euler.sumEvens(x);
 	//euler.smallestMultiple(10);
 	
 
