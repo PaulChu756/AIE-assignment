@@ -8,5 +8,6 @@ class ProjectEuler
 		int sumOfThreeAndFive(int num);
 		bool isEven(int num);
 		std::vector<int> fibUntil(int num);
+		int sumEvens(std::vector<int> num);
 		int smallestMultiple(int num);
 };

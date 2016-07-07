@@ -18,11 +18,11 @@ bool ProjectEuler::isEven(int num)
 {
 	if (num % 2 == 0)
 	{
-		std::cout << "True" << std::endl;
+		//std::cout << "True" << std::endl;
 		return true;
 	}
 	else
-		std::cout << "False" << std::endl;
+		//std::cout << "False" << std::endl;
 	return false;
 }
 
@@ -33,14 +33,28 @@ std::vector<int> ProjectEuler::fibUntil(int maxNum)
 
 	while (first < maxNum)
 	{
+		//std::cout << first << std::endl;
 		int t = first + second;
 		first = second;
 		second = t;
-		
 		list.push_back(first);
-		std::cout << list.size() << std::endl;
-		return list;
+		//std::cout << list.size() << std::endl;
 	}
+	return list;
+}
+
+int ProjectEuler::sumEvens(std::vector<int> list)
+{
+	int evenTotal = 0;
+	for (int i = 0; i < list.size(); i++)
+	{
+		if (isEven(list[i]))
+		{
+			evenTotal += i;
+			std::cout << evenTotal << std::endl;
+		}
+	}
+	return true;
 }
 
 int ProjectEuler::smallestMultiple(int num)
