@@ -65,7 +65,7 @@ int PrimeNum::HighestPrimeFactor(long long num)
 	long long factor = 0;
 
 	//Check factor of number
-	for (long long i = num; i > 1; --i)
+	for (long long i = 1; i < num; i++)
 	{
 		if (num % i == 0)
 		{

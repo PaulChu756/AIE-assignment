@@ -90,8 +90,8 @@ int main()
 
 		//// Highest Prime Factor
 		//std::cout << "Enter a number to find out the highest prime factor." << std::endl;
-		PrimeNum primeNum;
-		primeNum.HighestPrimeFactor(600851475143);
+		//PrimeNum primeNum;
+		//primeNum.HighestPrimeFactor(20);
 	//}
 	
 
@@ -117,6 +117,13 @@ int main()
 	//euler.fibUntil(10);
 	//std::vector<int> x = euler.fibUntil(4000000);
 	//euler.sumEvens(x);
+	while (true)
+	{
+		long long num;
+		std::cin >> num;
+		euler.largestPrimeFactor(num);
+	}
+	
 	//euler.smallestMultiple(10);
 	
 	system("pause");

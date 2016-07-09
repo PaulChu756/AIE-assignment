@@ -75,6 +75,26 @@ int ProjectEuler::sumEvens(std::vector<int> list)
 	return true;
 }
 
+int ProjectEuler::largestPrimeFactor(long long num)
+{
+	for (int i = 2; i < num; i++)
+	{
+		std::cout << num << " % " << i << " = " << num%i << std::endl;
+
+		if (num % i == 0)
+		{
+			std::cout << "Not Prime" << std::endl;
+			return false;
+		}
+
+		else if (num % i != 0)
+		{
+			std::cout << "Prime" << std::endl;
+			return true;
+		}
+	}
+}
+
 int ProjectEuler::smallestMultiple(int num)
 {
 	/*
