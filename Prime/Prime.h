@@ -5,7 +5,7 @@ class PrimeNum
 {
 public:
 	bool isPrime(int num);
-	int HighestPrime(long long num);
+	int HighestPrime(int num);
 	int SumOfPrimes(int num);
-	int HighestPrimeFactor(long long num);
+	int HighestPrimeFactor(int num);
 };

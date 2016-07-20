@@ -10,6 +10,6 @@ class ProjectEuler
 		bool isEven(int num);
 		std::vector<int> fibUntil(int num);
 		int sumEvens(std::vector<int> num);
-		int largestPrimeFactor(long long num);
+		int largestPrimeFactor(int num);
 		int smallestMultiple(int num);
 };

@@ -64,37 +64,35 @@ int main()
 	zero.swapNode(&zero, &one, &three);
 	print();*/
 
-	/*while (true)
-	{*/
-		//// (Factorying)
-		//	factor(2);
-		//	cout << factor << endl;
+	while (true)
+	{
+		/*(Factorying)
+		factor(2);
+		cout << factor << endl;*/
 
-		//(Prime)
-		//int num;
+		PrimeNum prime;
+		int num;
 
-		//// Just for Prime Number
+		 //Just for Prime Number
 		/*std::cout << "Enter a number: " << std::endl;
 		std::cin >> num;
-		isPrime(p);*/
+		prime.isPrime(num);*/
 
-		//// Highest Prime Number
-		/*std::cout << "Enter two numbers to find out what's the highest prime!" << std::endl;
-		std::cin >> num;
-		HighestPrime(num);*/
+		 //Highest Prime Number
+		/*std::cin >> num;
+		prime.HighestPrime(num);*/
 
-		//// Sum of Prime Numbers
+		 //Sum of Prime Numbers
 		/*std::cout << "Enter two numbers to find out the sum of all the prime numbers!" << std::endl;
 		std::cin >> num;
 		SumOfPrimes(num);*/
 
-		//// Highest Prime Factor
-		//std::cout << "Enter a number to find out the highest prime factor." << std::endl;
-		//PrimeNum primeNum;
-		//primeNum.HighestPrimeFactor(20);
-	//}
+		//Highest Prime Factor
+		std::cout << "Enter a number to find out the highest prime factor." << std::endl;
+		std::cin >> num;
+		prime.HighestPrimeFactor(num);
+	}
 	
-
 	//// (UpperCase)
 	/*UpperCase("The quick BROWN FOx");
 	UpperCase("the quick brown fox");
@@ -110,19 +108,20 @@ int main()
 	Zero zero;
 	zero.ZeroValue(x, 10);*/
 
-	ProjectEuler euler;
+	//ProjectEuler euler;
 	//euler.sumOfThreeAndFive(1000);
 	//euler.evenFibNum(4000000);
 	//euler.isEven(10);
 	//euler.fibUntil(10);
 	//std::vector<int> x = euler.fibUntil(4000000);
 	//euler.sumEvens(x);
-	while (true)
+
+	/*while (true)
 	{
-		long long num;
+		int num;
 		std::cin >> num;
 		euler.largestPrimeFactor(num);
-	}
+	}*/
 	
 	//euler.smallestMultiple(10);
 	
