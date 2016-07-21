@@ -71,7 +71,7 @@ int main()
 		cout << factor << endl;*/
 
 		PrimeNum prime;
-		int num;
+		long long num;
 
 		 //Just for Prime Number
 		/*std::cout << "Enter a number: " << std::endl;

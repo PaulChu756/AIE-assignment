@@ -75,26 +75,34 @@ int ProjectEuler::sumEvens(std::vector<int> list)
 	return true;
 }
 
+// Does not work, completed largest prime factor on Prime.cpp.
 int ProjectEuler::largestPrimeFactor(int num)
 {
-	for (int i = num; i - 1 > 2; i--)
+	for (int i = 2; i < num; i++)
 	{
-		std::cout << num << " % " << i << " = " << num%i << std::endl;
-
+		//std::cout << num << " % " << i << " = " << num%i <<std::endl;
 		if (num % i == 0)
 		{
-			int primeFactor = i;
-			std::cout << primeFactor << std::endl;
-			//std::cout << "Prime" << std::endl;
-			return true;
+			/*std::cout << "remainder of " << i << ", " << num << " is not 0" << std::endl;
+			std::cout << "False: is not a Prime Number" << std::endl;
+			std::cout << " " << std::endl;*/
 		}
-
-		/*else if (num % i == 0)
-		{
-			std::cout << "Not Prime" << std::endl;
-			return true;
-		}*/
 	}
+
+	/*int primeFactor = 0;
+	for (long long i = 1; i < num; i++)
+	{
+		if (isPrime(i))
+		{
+			primeFactor = i;
+
+			if (num % primeFactor == 0)
+			{
+				std::cout << primeFactor << std::endl;
+			}
+		}
+	}
+	return primeFactor;*/
 }
 
 int ProjectEuler::smallestMultiple(int num)

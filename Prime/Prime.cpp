@@ -1,24 +1,23 @@
 #include "Prime.h"
 bool PrimeNum::isPrime(int num)
 {
-	int i;
-	for (i = 2; i < num; ++i)
+	for (int i = 2; i < num; i++)
 	{
-		std::cout << num << " % " << i << " = " << num%i <<std::endl;
-		if (num % i != 0)
+		//std::cout << num << " % " << i << " = " << num%i <<std::endl;
+		if (num % i == 0)
 		{
-			std::cout << "remainder of " << i << ", " << num << " is not 0" << std::endl;
-			std::cout << "True : a prime number" << std::endl;
-			std::cout << " " << std::endl;
-			return true;
+			/*std::cout << "remainder of " << i << ", " << num << " is not 0" << std::endl;
+			std::cout << "False: is not a Prime Number" << std::endl;
+			std::cout << " " << std::endl;*/
+			return false;
 		}
 		else
 		{
-			std::cout << "False: is not a Prime Number" << std::endl;
-			std::cout << " " << std::endl;
-			return false;
+			/*std::cout << "True : a prime number" << std::endl;
+			std::cout << " " << std::endl;*/
 		}
 	}
+	return true;
 }
 
 int PrimeNum::HighestPrime(int num)
@@ -56,21 +55,20 @@ int PrimeNum::SumOfPrimes(int num)
 	return sumOfPrimes;
 }
 
-int PrimeNum::HighestPrimeFactor(int num)
+int PrimeNum::HighestPrimeFactor(long long num)
 {
-	int highestPrimeFactor = 0;
-	int factor = 0;
-
-	for (int i = 1; i < num; i++)
+	int primeFactor = 0;
+	for (long long i = 1; i < num; i++)
 	{
-		if (num % i != 0)
+		if (isPrime(i))
 		{
-			factor = i;
-			HighestPrime(factor);
-			highestPrimeFactor = factor;
-			//std::cout << highestPrimeFactor << std::endl;
-			std::cout << "Highest prime factor of: " << num << " is " << highestPrimeFactor << std::endl;
+			primeFactor = i;
+
+			if (num % primeFactor == 0)
+			{
+				std::cout << primeFactor << std::endl;
+			}
 		}
 	}
-	return highestPrimeFactor;
+	return primeFactor;
 }
