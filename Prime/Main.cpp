@@ -70,8 +70,8 @@ int main()
 		factor(2);
 		cout << factor << endl;*/
 
-		PrimeNum prime;
-		long long num;
+		/*PrimeNum prime;
+		long long num;*/
 
 		 //Just for Prime Number
 		/*std::cout << "Enter a number: " << std::endl;
@@ -88,9 +88,9 @@ int main()
 		SumOfPrimes(num);*/
 
 		//Highest Prime Factor
-		std::cout << "Enter a number to find out the highest prime factor." << std::endl;
+		/*std::cout << "Enter a number to find out the highest prime factor." << std::endl;
 		std::cin >> num;
-		prime.HighestPrimeFactor(num);
+		prime.HighestPrimeFactor(num);*/
 	}
 	
 	//// (UpperCase)
@@ -108,7 +108,7 @@ int main()
 	Zero zero;
 	zero.ZeroValue(x, 10);*/
 
-	//ProjectEuler euler;
+	ProjectEuler euler;
 	//euler.sumOfThreeAndFive(1000);
 	//euler.evenFibNum(4000000);
 	//euler.isEven(10);
@@ -116,14 +116,15 @@ int main()
 	//std::vector<int> x = euler.fibUntil(4000000);
 	//euler.sumEvens(x);
 
-	/*while (true)
+	while (true)
 	{
 		int num;
 		std::cin >> num;
-		euler.largestPrimeFactor(num);
-	}*/
+		//euler.largestPrimeFactor(num);
+		euler.smallestMultiple(num);
+	}
 	
-	//euler.smallestMultiple(10);
+	
 	
 	system("pause");
 }

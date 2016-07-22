@@ -103,6 +103,7 @@ int ProjectEuler::largestPrimeFactor(int num)
 		}
 	}
 	return primeFactor;*/
+	return true;
 }
 
 int ProjectEuler::smallestMultiple(int num)
@@ -115,26 +116,12 @@ int ProjectEuler::smallestMultiple(int num)
 	divisible by all of the numbers from 1 to 20?
 	*/
 
-	int smallestMult = 1;
-	bool condition = true;
-	while (condition)
+	for (int i = 0; i <= num; i++)
 	{
-		for (int i = 1; i <= num; i++)
+		if (num % i == 0)
 		{
-			if (smallestMult % i != 0)
-			{
-				break;
-				return smallestMult;
-			}
-			else
-			{
-				if (num == i)
-				{
-
-				}
-			}
-			smallestMult++;
+			std::cout << i << std::endl;
 		}
 	}
-	return smallestMult;
+	return true;
 }
