@@ -116,6 +116,11 @@ int ProjectEuler::smallestMultiple(int num)
 	input: 10 or 20
 	So we already start off at 1.
 
+	So I know that each number from 1 to 10 can divide into 2520
+	with no remainder, trying to figure out how to divide all numbers
+	in a for loop, and if the number can not be divided 
+	by any numbers in the for loop, add 1 to smallestNum and try again.
+
 	What is the smallest positive number that is evenly 
 	divisible by all of the numbers from 1 to 20?
 	*/
@@ -129,7 +134,6 @@ int ProjectEuler::smallestMultiple(int num)
 		}
 	}
 	smallestNum++;
-	return smallestNum;
 }
 
 int ProjectEuler::d()

@@ -119,10 +119,10 @@ int main()
 	while (true)
 	{
 		int num;
-		//std::cin >> num;
+		std::cin >> num;
 		//euler.largestPrimeFactor(num);
-		//euler.smallestMultiple(num);
-		euler.d();
+		euler.smallestMultiple(num);
+		//euler.d();
 	}
 	system("pause");
 }
