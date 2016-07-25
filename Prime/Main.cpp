@@ -64,7 +64,7 @@ int main()
 	zero.swapNode(&zero, &one, &three);
 	print();*/
 
-	while (true)
+	/*while (true)
 	{
 		/*(Factorying)
 		factor(2);
@@ -90,8 +90,8 @@ int main()
 		//Highest Prime Factor
 		/*std::cout << "Enter a number to find out the highest prime factor." << std::endl;
 		std::cin >> num;
-		prime.HighestPrimeFactor(num);*/
-	}
+		prime.HighestPrimeFactor(num);
+	}*/
 	
 	//// (UpperCase)
 	/*UpperCase("The quick BROWN FOx");
@@ -119,12 +119,10 @@ int main()
 	while (true)
 	{
 		int num;
-		std::cin >> num;
+		//std::cin >> num;
 		//euler.largestPrimeFactor(num);
-		euler.smallestMultiple(num);
+		//euler.smallestMultiple(num);
+		euler.d();
 	}
-	
-	
-	
 	system("pause");
 }

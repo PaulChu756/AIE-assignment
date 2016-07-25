@@ -112,16 +112,39 @@ int ProjectEuler::smallestMultiple(int num)
 	2520 is the smallest number that can be divided 
 	by each of the numbers from 1 to 10 without any remainder.
 
+	output: 2520
+	input: 10 or 20
+	So we already start off at 1.
+
 	What is the smallest positive number that is evenly 
 	divisible by all of the numbers from 1 to 20?
 	*/
 
-	for (int i = 0; i <= num; i++)
+	int smallestNum = 1;
+	for (int i = 1; i <= num; ++i)
 	{
-		if (num % i == 0)
+		if (smallestNum % i == 0)
 		{
-			std::cout << i << std::endl;
+			return smallestNum;
 		}
 	}
-	return true;
+	smallestNum++;
+	return smallestNum;
+}
+
+int ProjectEuler::d()
+{
+	int a = 0, b = 0;
+	int c = 1, d = 1;
+
+	std::cout << d << std::endl;
+	while (a != 10)
+	{
+		d = b + c;
+		b = c;
+		c = d;
+		++a;
+		std::cout << d << std::endl;
+	}
+	return d;
 }

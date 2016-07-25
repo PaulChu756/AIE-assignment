@@ -12,4 +12,5 @@ class ProjectEuler
 		int sumEvens(std::vector<int> num);
 		int largestPrimeFactor(int num);
 		int smallestMultiple(int num);
+		int d();
 };
