@@ -128,9 +128,16 @@ int ProjectEuler::smallestMultiple(int num)
 	int smallestNum = 1;
 	for (int i = 1; i <= num; ++i)
 	{
-		if (smallestNum % i == 0)
+		if (smallestNum % i != 0)
 		{
-			return smallestNum;
+			break;
+		}
+		else
+		{
+			if (i == num)
+			{
+				return smallestNum;
+			}
 		}
 	}
 	smallestNum++;
