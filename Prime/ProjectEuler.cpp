@@ -126,21 +126,28 @@ int ProjectEuler::smallestMultiple(int num)
 	*/
 
 	int smallestNum = 1;
-	for (int i = 1; i <= num; ++i)
+	bool condition = true;
+	while (condition)
 	{
-		if (smallestNum % i != 0)
+		for (int i = 1; i <= num; ++i)
 		{
-			break;
-		}
-		else
-		{
-			if (i == num)
+			if (smallestNum % i != 0)
 			{
-				return smallestNum;
+				break;
+			}
+			else
+			{
+				if (i == num)
+				{
+					condition = false;
+					std::cout << smallestNum << std::endl;
+					return smallestNum;
+				}
 			}
 		}
+		smallestNum++;
 	}
-	smallestNum++;
+	return smallestNum;
 }
 
 int ProjectEuler::d()
