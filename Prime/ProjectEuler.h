@@ -12,5 +12,7 @@ class ProjectEuler
 		int sumEvens(std::vector<int> num);
 		int largestPrimeFactor(int num);
 		int smallestMultiple(int num);
+		bool NumberIsDivisibleByNumbersInRange(int number, int start, int end);
+		int SmallestNumberDivisibleByNumbersInRange(int start, int end);
 		int d();
 };

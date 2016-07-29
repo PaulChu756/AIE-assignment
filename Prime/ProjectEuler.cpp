@@ -166,3 +166,24 @@ int ProjectEuler::d()
 	}
 	return d;
 }
+
+bool ProjectEuler::NumberIsDivisibleByNumbersInRange(int number, int start, int end)
+{
+	for (start; start <= end; ++start)
+	{
+		if (number % start == 0)
+		{
+			if (start == end)
+			{
+				std::cout << "True" << std::endl;
+				return true;
+			}
+		}
+		else
+		{
+			std::cout << "False" << std::endl;
+			return false;
+		}
+	}
+	return true;
+}

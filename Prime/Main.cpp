@@ -118,11 +118,12 @@ int main()
 
 	while (true)
 	{
-		int num;
-		std::cin >> num;
+		//int num;
+		//std::cin >> num;
 		//euler.largestPrimeFactor(num);
-		euler.smallestMultiple(num);
+		//euler.smallestMultiple(num);
 		//euler.d();
+		euler.NumberIsDivisibleByNumbersInRange(2521, 1, 10);
 	}
 	system("pause");
 }
