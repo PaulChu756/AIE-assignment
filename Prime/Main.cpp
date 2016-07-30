@@ -116,14 +116,16 @@ int main()
 	//std::vector<int> x = euler.fibUntil(4000000);
 	//euler.sumEvens(x);
 
-	while (true)
-	{
-		//int num;
-		//std::cin >> num;
-		//euler.largestPrimeFactor(num);
-		//euler.smallestMultiple(num);
-		//euler.d();
-		euler.NumberIsDivisibleByNumbersInRange(2521, 1, 10);
-	}
+	//while (true)
+	//{
+	//	//int num;
+	//	//std::cin >> num;
+	//	//euler.largestPrimeFactor(num);
+	//	//euler.smallestMultiple(num);
+	//	//euler.d();
+	//	//euler.NumberIsDivisibleByNumbersInRange(2521, 1, 10);
+	//	
+	//}
+	euler.SmallestNumberDivisibleByNumbersInRange(1, 10);
 	system("pause");
 }

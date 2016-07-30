@@ -175,15 +175,24 @@ bool ProjectEuler::NumberIsDivisibleByNumbersInRange(int number, int start, int 
 		{
 			if (start == end)
 			{
-				std::cout << "True" << std::endl;
+				//std::cout << "True" << std::endl;
 				return true;
 			}
 		}
 		else
 		{
-			std::cout << "False" << std::endl;
+			//std::cout << "False" << std::endl;
 			return false;
 		}
 	}
 	return true;
+}
+
+int ProjectEuler::SmallestNumberDivisibleByNumbersInRange(int start, int end)
+{
+	int number = end;
+	while (!NumberIsDivisibleByNumbersInRange(++number, start, end))
+	{}
+	std::cout << number << std::endl;
+	return number;
 }
