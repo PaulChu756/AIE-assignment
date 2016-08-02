@@ -126,6 +126,8 @@ int main()
 		euler.NumberIsDivisibleByNumbersInRange(2521, 1, 10);
 		euler.SmallestNumberDivisibleByNumbersInRange(1, 10);*/
 		//euler.sumOfSquares(num);
+		//euler.sqaureOfSums(num);
+		euler.sqaureOfSumsDifferencesumOfSquares(num);
 	}
 	system("pause");
 }

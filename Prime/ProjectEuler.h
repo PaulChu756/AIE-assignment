@@ -17,4 +17,5 @@ class ProjectEuler
 		int d();
 		int sumOfSquares(int num);
 		int sqaureOfSums(int num);
+		int sqaureOfSumsDifferencesumOfSquares(int num);
 };

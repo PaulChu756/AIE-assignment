@@ -209,3 +209,23 @@ int ProjectEuler::sumOfSquares(int end)
 	std::cout << sum << std::endl;
 	return sum;
 }
+
+int ProjectEuler::sqaureOfSums(int end)
+{
+	int sum = 0;
+	for (int start = 1; start <= end; start++)
+	{
+		sum += start;
+	}
+	sum *= sum;
+	std::cout << sum << std::endl;
+	return sum;
+}
+
+int ProjectEuler::sqaureOfSumsDifferencesumOfSquares(int end)
+{
+	int difference = 0;
+	difference = sqaureOfSums(end) - sumOfSquares(end);
+	std::cout << difference << std::endl;
+	return difference;
+}
