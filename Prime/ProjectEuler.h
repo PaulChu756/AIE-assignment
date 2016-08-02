@@ -15,4 +15,6 @@ class ProjectEuler
 		bool NumberIsDivisibleByNumbersInRange(int number, int start, int end);
 		int SmallestNumberDivisibleByNumbersInRange(int start, int end);
 		int d();
+		int sumOfSquares(int num);
+		int sqaureOfSums(int num);
 };

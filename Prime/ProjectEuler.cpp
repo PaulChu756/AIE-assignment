@@ -196,3 +196,16 @@ int ProjectEuler::SmallestNumberDivisibleByNumbersInRange(int start, int end)
 	std::cout << number << std::endl;
 	return number;
 }
+
+int ProjectEuler::sumOfSquares(int end)
+{
+	int sum = 0, num = 0;
+	for (int start = 1; start <= end; start++)
+	{
+		num = start;
+		num *= num;
+		sum += num;
+	}
+	std::cout << sum << std::endl;
+	return sum;
+}
