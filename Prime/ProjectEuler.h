@@ -18,4 +18,5 @@ class ProjectEuler
 		int sumOfSquares(int num);
 		int sqaureOfSums(int num);
 		int sqaureOfSumsDifferencesumOfSquares(int num);
+		int tenThousandAndOnePrimeNumber(int num);
 };

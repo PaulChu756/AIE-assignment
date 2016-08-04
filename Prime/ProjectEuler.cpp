@@ -229,3 +229,20 @@ int ProjectEuler::sqaureOfSumsDifferencesumOfSquares(int end)
 	std::cout << difference << std::endl;
 	return difference;
 }
+
+int ProjectEuler::tenThousandAndOnePrimeNumber(int end)
+{
+	// 1 to 6s
+	for (int start = 1; start <= end; start++)
+	{
+		// 2, 3, 5, 7, 11, 13
+		for (int i = 1; i < end; i++)
+		{
+			if (end % i == 0)
+			{
+				std::cout << i << std::endl;
+			}
+		}
+	}
+	return end;
+}

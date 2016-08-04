@@ -124,10 +124,11 @@ int main()
 		euler.smallestMultiple(num);
 		euler.d();
 		euler.NumberIsDivisibleByNumbersInRange(2521, 1, 10);
-		euler.SmallestNumberDivisibleByNumbersInRange(1, 10);*/
-		//euler.sumOfSquares(num);
-		//euler.sqaureOfSums(num);
-		euler.sqaureOfSumsDifferencesumOfSquares(num);
+		euler.SmallestNumberDivisibleByNumbersInRange(1, 10);
+		euler.sumOfSquares(num);
+		euler.sqaureOfSums(num);
+		euler.sqaureOfSumsDifferencesumOfSquares(num);*/
+		euler.tenThousandAndOnePrimeNumber(num);
 	}
 	system("pause");
 }
